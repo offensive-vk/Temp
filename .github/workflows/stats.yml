@@ -32,8 +32,9 @@ jobs:
     - name: Generate Stats
       uses: offensive-vk/auto-stats@v6
       with:
+        options: '-S'
         name: Hamster [bot]
         email: TheHamsterBot@outlook.com
         branch: master
-        message: 'Updated Repo Stats'
+        message: 'Updated Repo Stats - Hamster 🐹'
         github-token: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}

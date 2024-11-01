@@ -29,7 +29,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
         node: ["18.x", "19.x", "20.x", "21.x", "22.x", "23.x"]
     runs-on: ${{ matrix.os }}
-    name: Optimize & Build - v${{ matrix.node }}
+    name: Optimize & Build - v${{ matrix.node }} on ${{ matrix.os }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -53,13 +53,13 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: temp-artifacts
+          name: temp-artifacts-${{ matrix.os }}-v${{ matrix.node }}
           path: dist
 
       - name: Upload Successful Summary
         if: success()
-        run: echo "Build Succeeded ✅"
+        run: echo "# Build Succeeded ✅" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload Failure Summary
         if: failure()
-        run: echo "Build Failed ❌"
+        run: echo "# Build Failed ❌" >> $GITHUB_STEP_SUMMARY
