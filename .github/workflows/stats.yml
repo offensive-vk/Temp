@@ -2,8 +2,8 @@ name: CI / Generate Statistics
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
+  push:
+    branches: [ "**" ]
 
 jobs:
   stats:
@@ -22,6 +22,7 @@ jobs:
         git_user_signingkey: true
         git_commit_gpgsign: true
         git_config_global: true
+        git_push_gpgsign: true
         trust_level: 5
 
     - name: Verify GPG Key
@@ -32,7 +33,7 @@ jobs:
     - name: Generate Stats
       uses: offensive-vk/auto-stats@v6
       with:
-        options: '-S -A'
+        options: '-A -S'
         name: Hamster [bot]
         email: TheHamsterBot@outlook.com
         branch: master

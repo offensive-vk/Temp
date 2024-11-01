@@ -1,0 +1,56 @@
+name: CI / Linter
+
+on:
+  push:
+    branches: [ "**" ]
+    paths-ignore: [ '**.md', '**.svg']
+  pull_request:
+    branches: [ "**" ]
+    paths-ignore: [ '**.md', '**.svg' ]
+  workflow_dispatch:
+
+jobs:
+   lint:
+    runs-on: ubuntu-latest
+    name: Lint
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Deno v2
+      uses: denoland/setup-deno@v2
+      with:
+        deno-version: v2.x
+
+    - name: Setup Project
+      run: deno info; deno install
+
+    - name: Run Linter
+      run: deno fmt --ext jsx, js, ts, tsx, sass, css, html, json
+    
+    - name: Import GPG Key
+      id: gpg
+      uses: crazy-max/ghaction-import-gpg@v6
+      with:
+        gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+        passphrase: ${{ secrets.GPG_PASSPHRASE }}
+        git_user_signingkey: true
+        git_commit_gpgsign: true
+        git_config_global: true
+        git_push_gpgsign: true
+        trust_level: 5
+
+    - name: Verify GPG Key
+      run: |
+        gpg --list-secret-keys --keyid-format LONG
+        git config --global --list
+
+    - name: Commit and Push
+      run: |
+        git add .
+        git commit -m "Updated Linter Results."
+        git config --local user.name ${{ steps.gpg.outputs.name }}
+        git config --local user.email ${{ steps.gpg.outputs.email }}
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}
