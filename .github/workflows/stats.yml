@@ -32,7 +32,7 @@ jobs:
     - name: Generate Stats
       uses: offensive-vk/auto-stats@v6
       with:
-        options: '-S'
+        options: '-S -A'
         name: Hamster [bot]
         email: TheHamsterBot@outlook.com
         branch: master

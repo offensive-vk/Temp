@@ -9,6 +9,7 @@
     "url": "https://github.com/offensive-vk"
   },
   "scripts": {
+    "lint": "echo 'Linter is on holiday'",
     "dev": "vite --host",
     "build": "vite build -d",
     "preview": "vite preview --cors",
