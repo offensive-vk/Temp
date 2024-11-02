@@ -97,8 +97,8 @@ export const MovieFinderApp = () => {
         <meta name="description" content="TEMP - One Platform to Find Whatever You Need About Movies and Series." />
         <title>TheExitMoviePlatform - Find Everything, Anywhere, Anytime.</title>
         <link rel="canonical" href="https://find-everything.pages.dev/" />
-        <link rel="shortcut icon" type="image/svg+xml" href="/icons/svg/logo-color.svg" />
-        <link rel="icon" type="image/svg+xml" href="/icons/svg/logo-no-background.svg" />
+        <link rel="shortcut icon" type="image/svg+xml" href="/logo/svg/logo-color.svg" />
+        <link rel="icon" type="image/svg+xml" href="/logo/svg/logo-no-background.svg" />
         <meta name="keywords" content="temp, theexitmovieplatform, movie-finder, show-finder, movies, series, movie, series, search, find, discover, popular, upcoming, top-rated, on-the-air, genre, category, actor, actress, cast, crew, production, release, budget, revenue, rating, runtime, tagline, vote-count, seasons, episodes, last-air-date, production-companies, director, recommendations, watch-trailer, streaming, results, results-for, media-type, origin-country, cast, spoken-languages, status, release-date, budget, revenue, popularity, runtime, tagline, vote-count, seasons, episodes, last-air-date, production-companies, crew, recommendations, watch-trailer, streaming, results, results-for, media-type, origin-country, cast, spoken-languages, status, release-date, budget, revenue, popularity, runtime, tagline, vote-count, seasons, episodes, last-air-date, production-companies, crew, recommendations, watch-trailer, streaming" />
       </Helmet>
       <RouterProvider router={router} />

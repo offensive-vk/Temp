@@ -26,8 +26,13 @@ jobs:
       run: deno info; deno install
 
     - name: Run Linter
-      run: deno fmt --ext jsx, js, ts, tsx, sass, css, html, json
-    
+      run: | 
+        deno fmt --ext jsx
+        deno fmt --ext js 
+        deno fmt --ext css
+        deno fmt --ext html 
+        deno fmt --ext json 
+        
     - name: Import GPG Key
       id: gpg
       uses: crazy-max/ghaction-import-gpg@v6

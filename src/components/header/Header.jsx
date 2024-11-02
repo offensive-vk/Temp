@@ -59,11 +59,11 @@ export function Header() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <LazyLoadImage
-            src="/cinema-film-movie.svg"
+            src="/logo/svg/logo-grayscale.svg"
             className="h-11 aspect-square"
             alt="Movie Finder Logo"
           />
-          <span className="text-left text-white text-xl md:text-2xl font-bold">
+          <span className="text-left text-white text-xl md:text-1xl font-bold">
             TEMP - The Exit Movie Platform
           </span>
         </Link>

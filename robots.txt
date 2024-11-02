@@ -1,2 +1,17 @@
-user-agent: *
-sitemap: https://find-everything.pages.dev/
+User-agent: *
+sitemap: https://find-everything.pages.dev/index.html
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
