@@ -24,12 +24,6 @@ export const Footer = ({ type }) => {
       title: "X (Twitter)",
       alt: "X"
     },
-    {
-      path: "mailto:superuser.ntsystems@outlook.com",
-      src: "/gmail.svg",
-      title: "Personal Email",
-      alt: 'gmail logo',
-    },
   ];
   return (
     <footer

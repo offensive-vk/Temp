@@ -10,10 +10,10 @@
   },
   "scripts": {
     "lint": "echo 'Linter is on holiday'",
-    "dev": "vite --host",
-    "build": "vite build -d",
-    "preview": "vite preview --cors",
-    "optimize": "vite optimize"
+    "dev": "vite --host --port 17027 --force --clearScreen -d",
+    "build": "vite build -d --sourcemap",
+    "preview": "vite preview -d",
+    "optimize": "vite optimize -d"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
