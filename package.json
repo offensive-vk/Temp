@@ -12,8 +12,8 @@
     "lint": "echo 'Linter is on holiday'",
     "dev": "vite --host",
     "build": "vite build -d",
-    "preview": "vite preview --cors",
-    "optimize": "vite optimize"
+    "preview": "vite preview -d",
+    "optimize": "vite optimize -d"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
