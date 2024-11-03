@@ -17,7 +17,7 @@ export const ItemGridMovies = ({ movie }) => {
   const { time_convert, colorScore } = useCustomFunctions();
 
   return (
-    <div className="w-full min-w-[500] min-h-[500] max-w-full bg-slate-900 shadow-md rounded-2xl overflow-hidden mx-auto border-2 border-transparent hover:border-[#2074F6]">
+    <div className="w-full min-w-[512] min-h-[512] max-w-full bg-slate-900 shadow-md overflow-hidden mx-auto border-2 border-transparent hover:border-[#05af35] ease-in-out duration-300 hover:rounded-xl">
       <Link
         to={`/movie/${
           movie.title
@@ -28,17 +28,17 @@ export const ItemGridMovies = ({ movie }) => {
         }/${movie?.id}`}
       >
         <div
-          className="overflow-hidden rounded-xl relative text-white h-full"
+          className="overflow-hidden relative text-white h-full w-full"
           data-movie-id={movie?.id}
         >
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-[#1d273d2b] to-transparent" />
 
-          <div className="relative cursor-pointer group z-10 p-5 pb-0">
+          <div className="relative cursor-pointer group z-10 p-4 pb-0">
             <div className=" align-self-end w-full">
-              <div className="h-64" />
-              <div className="space-y-3">
+              <div className="h-[18.7rem]" />
+              <div className="space-y-1">
                 <div className="flex flex-col space-y-2 inner">
-                  <h3 className="text-base md:text-xl font-bold text-white min-h-[56px] pb-5 md:pb-0">
+                  <h3 className="font-[ArialNova-Light] text-base md:text-xl text-white min-h-[56px] pb-5 md:pb-0">
                     {movie?.title}
                   </h3>
                 </div>
@@ -80,8 +80,8 @@ export const ItemGridMovies = ({ movie }) => {
           <img
             alt={`Image of ${movie.title}`}
             rel="preload"
-            width={"auto"}
-            height={"auto"}
+            width={"300"}
+            height={"450"}
             className="absolute inset-0 transform w-full -translate-y-4 img-mask"
             src={`${
               movie.poster_path

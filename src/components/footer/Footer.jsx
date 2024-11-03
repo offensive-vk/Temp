@@ -7,57 +7,67 @@ export const Footer = ({ type }) => {
   const { t } = useTranslation();
   const icons = [
     {
-      path: t("https://github.com/"),
-      src: "/github.svg",
+      path: t("https://github.com/offensive-vk"),
+      src: "https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/github/github-original.svg",
       title: "Github",
       alt: 'github logo',
     },
     {
       path: t("https://imdb.com"),
-      src: "/icons/imdb.svg",
+      src: "/svg/imdb.svg",
       title: "IMDB",
-      alt: 'imdb logo',
+      alt: 'IMDB',
     },
     {
-      path: t("https://x.com"),
-      src: "/icons/x.svg",
-      title: "X (Twitter)",
-      alt: "X"
+      path: t("https://tailwindcss.com"),
+      src: "https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/tailwindcss/tailwindcss-original.svg",
+      title: "Tailwind CSS",
+      alt: "TailwindCSS"
     },
+    {
+      path: t("https://vite.dev/"),
+      src: "https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/vitejs/vitejs-original.svg",
+      title: "Vite",
+      alt: "Vite"
+    },
+    {
+      path: t("https://reactjs.org/"),
+      src: "https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/react/react-original.svg",
+      title: "React",
+      alt: "React"
+    },
+    {
+      path: t("https://www.netlify.com/"),
+      src: "https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/docker/docker-original.svg",
+      title: "Docker",
+      alt: "Docker"
+    }
   ];
   return (
     <footer
-      className={` border-gray-200 w-full z-20 ${
-        type === "no single" ? "fixed bottom-0" : "block"
+      className={` border-gray-200 w-full ${
+        type === "no single" ? "bottom-0" : "block"
       }`}
-      style={{ backgroundColor: "#0F172A" }}
+      style={{ backdropFilter: "blur(25px)", borderTop: "2px solid #fff" }}
     >
       <div className={`flex justify-around items-center p-3 pt-1`}>
         <div className="flex justify-left md:justify-start pt-2 md:pt-0 md:mt-0">
-        <h3 className="text-white text-xs md:text-base">&copy; Copyright 2024 - Present. Vedansh and Authors. All Rights Reserved</h3>
-          {/* <h3 className="text-white text-xs md:text-base">Powered By &nbsp;</h3>
-          <LazyLoadImage
-            src="/themoviedb.svg"
-            alt="themoviedb logo"
-            width={80}
-            height={80}
-            className="w-20 md:w-28"
-          /> */}
+          <h3 className="text-white text-xs md:text-base">&copy; Copyright 2024 - Present. Vedansh and Authors.</h3>
         </div>
         <div className="flex items-center justify-left md:justify-end mt-2 md:mt-0">
           <h3 className="text-white text-xs md:text-base flex justify-center">
-            <a href="https://github.com/offensive-vk">Vedansh (offensive-vk)</a>
+            <a href="https://github.com/offensive-vk">(offensive-vk)</a>
           </h3>
           {icons.map((icon) => (
             <Link
               to={icon.path}
               key={icon.alt}
               target="_blank"
-              className="p-2 hover:scale-110 hover:opacity-70 inline-block"
+              className="p-2 hover:rounded-lg hover:bg-cyan-900 ease-in-out duration-300 hover:opacity-90 inline-block"
             >
               <LazyLoadImage
                 src={icon.src}
-                className="filter dark:invert h-4 w-4 md:h-5 md:w-5"
+                className="h-4 w-4 md:h-5 md:w-5"
                 alt={icon.alt}
               />
             </Link>

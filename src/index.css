@@ -25,9 +25,16 @@
   font-display: swap;
 }
 
-* {
+@font-face {
+  font-family: "ArialNova-Light";
+  src: url("/fonts/ArialNova-Light.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+*, *::before, *::after {
   font-family: "ArialNova", sans-serif;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 html {
@@ -123,7 +130,7 @@ html {
   scale: 0.92;
 }
 
-/*Button Language*/
+/****** Button Language **** */
 
 .p-selectbutton .p-button {
   background: #1f2937;
@@ -189,13 +196,13 @@ div.p-selectbutton div.p-button {
 .p-button:focus {
   box-shadow:
     0 0 0 2px #1c2127,
-    0 0 0 4px #2074f6,
+    0 0 0 4px #23bb01,
     0 1px 2px 0 rgba(0, 0, 0, 0);
   outline: 0 none;
   outline-offset: 0;
 }
 
-/*SPINER*/
+/* loader */
 
 .loader {
   width: 64px;
@@ -205,7 +212,7 @@ div.p-selectbutton div.p-button {
     linear-gradient(#ffffff 16px, transparent 0),
     linear-gradient(#5933f2 16px, transparent 0),
     linear-gradient(#1cf14a 16px, transparent 0),
-    linear-gradient(#fff 16px, transparent 0);
+    linear-gradient(#ffffff 16px, transparent 0);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: left top, left bottom, right top, right bottom;
@@ -308,7 +315,7 @@ div.menu-mobile > ul.p-menubar-root-list {
   }
 }
 
-/* ===== Scrollbar CSS ===== */
+/* ****** Scrollbar  */
 /* Firefox */
 html {
   scrollbar-width: auto;
@@ -325,7 +332,15 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #2176f6;
+  background-color: #14e92d #1b2335;
   border-radius: 15px;
   border: 3px solid #ffffff;
 }
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #1b2335;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
+}
+
+/******* END ********* **/

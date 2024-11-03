@@ -95,7 +95,7 @@ export const MovieFinderApp = () => {
         <title>TheExitMoviePlatform - Find Everything, Anywhere, Anytime.</title>
         <link rel="canonical" href="https://find-everything.pages.dev/" />
         <link rel="shortcut icon" type="image/svg+xml" href="/logo/svg/logo-color.svg" />
-        <link rel="icon" type="image/svg+xml" href="/logo/svg/logo-no-background.svg" />
+        <link rel="icon" type="image/svg+xml" href="/svg/title-logo.svg" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="TheExitMoviePlatform by Vedansh (offensive-vk)" />
         <meta property="og:title" content="TheExitMoviePlatform - Find Everything, Anywhere, Anytime." />
