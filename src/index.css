@@ -2,22 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Font*/
+/* Font */
 @font-face {
-  font-family: "Monaspace";
-  src: url("/fonts/MonaspaceArgon-Regular.otf");
+  font-family: "ArialNova";
+  src: url("/fonts/ArialNova.ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-* {
-  font-family: "Monaspace", sans-serif;
+@font-face {
+  font-family: "ArialNova-Italic";
+  src: url("/fonts/ArialNova-Italic.ttf");
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArialNova-Bold";
+  src: url("/fonts/ArialNova-Bold.ttf");
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArialNova-Light";
+  src: url("/fonts/ArialNova-Light.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+*, *::before, *::after {
+  font-family: "ArialNova", sans-serif;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 html {
-  background-color: #0f172a;
+  background-color: #032a35;
 }
 
 .swiper-button-prev:after,
@@ -109,7 +130,7 @@ html {
   scale: 0.92;
 }
 
-/*Button Language*/
+/****** Button Language **** */
 
 .p-selectbutton .p-button {
   background: #1f2937;
@@ -175,13 +196,13 @@ div.p-selectbutton div.p-button {
 .p-button:focus {
   box-shadow:
     0 0 0 2px #1c2127,
-    0 0 0 4px #2074f6,
+    0 0 0 4px #23bb01,
     0 1px 2px 0 rgba(0, 0, 0, 0);
   outline: 0 none;
   outline-offset: 0;
 }
 
-/*SPINER*/
+/* loader */
 
 .loader {
   width: 64px;
@@ -191,7 +212,7 @@ div.p-selectbutton div.p-button {
     linear-gradient(#ffffff 16px, transparent 0),
     linear-gradient(#5933f2 16px, transparent 0),
     linear-gradient(#1cf14a 16px, transparent 0),
-    linear-gradient(#fff 16px, transparent 0);
+    linear-gradient(#ffffff 16px, transparent 0);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: left top, left bottom, right top, right bottom;
@@ -294,16 +315,16 @@ div.menu-mobile > ul.p-menubar-root-list {
   }
 }
 
-/* ===== Scrollbar CSS ===== */
+/* ****** Scrollbar  */
 /* Firefox */
 html {
   scrollbar-width: auto;
-  scrollbar-color: #2176f6 #1b2335;
+  scrollbar-color: #14e92d #1b2335;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 16px;
+  width: 32px;
 }
 
 *::-webkit-scrollbar-track {
@@ -311,7 +332,15 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #2176f6;
-  border-radius: 10px;
+  background-color: #14e92d #1b2335;
+  border-radius: 15px;
   border: 3px solid #ffffff;
 }
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #1b2335;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
+}
+
+/******* END ********* **/

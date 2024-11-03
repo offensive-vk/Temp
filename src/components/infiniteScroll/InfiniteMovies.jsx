@@ -80,7 +80,7 @@ export const InfiniteMovies = ({ media_type, title }) => {
           loader={loadingMessage}
         >
           <Layout>
-            <h2 className="text-3xl md:text-4xl pt-8 md:pt-5 p-5 text-center md:text-left font-bold text-[#3b82f6]">
+            <h2 className="text-xl md:text-4xl pt-8 md:pt-5 p-5 text-center md:text-left font-bold text-white">
               {title}
             </h2>
             <MovieGrid movieData={items} />

@@ -2,12 +2,14 @@ export const Error = () => {
   return (
     <div className="h-screen flex justify-center items-center">
       <div
-        className="bg-red-100 border border-red-800 text-red-700 px-4 py-3 rounded "
+        className="bg-transparent border border-red-800 text-red-700 px-4 py-3 rounded "
         role="alert"
       >
-        <strong className="font-bold">Something has gone wrong,</strong>
+        <strong className="font-bold">404? </strong>
         <span className="block sm:inline">
-          Kindly, be patience and try again later.
+          📃 Please be patience and try again later. <br /> <br />
+          ✨ PS: We're constantly working on the improving our services. <br /> <br />
+          ⚠️ If this issue persists, please open a issue <a className="text-blue-400 underline italic" href="https://github.com/offensive-vk/Temp/issues">here.</a>
         </span>
         <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
           <svg
