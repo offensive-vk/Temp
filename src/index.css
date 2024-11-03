@@ -2,22 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Font*/
+/* Font */
 @font-face {
-  font-family: "Monaspace";
-  src: url("/fonts/MonaspaceArgon-Regular.otf");
+  font-family: "ArialNova";
+  src: url("/fonts/ArialNova.ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "ArialNova-Italic";
+  src: url("/fonts/ArialNova-Italic.ttf");
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ArialNova-Bold";
+  src: url("/fonts/ArialNova-Bold.ttf");
+  font-style: bold;
+  font-display: swap;
+}
+
 * {
-  font-family: "Monaspace", sans-serif;
+  font-family: "ArialNova", sans-serif;
   color: #fff;
 }
 
 html {
-  background-color: #0f172a;
+  background-color: #032a35;
 }
 
 .swiper-button-prev:after,
@@ -298,12 +312,12 @@ div.menu-mobile > ul.p-menubar-root-list {
 /* Firefox */
 html {
   scrollbar-width: auto;
-  scrollbar-color: #2176f6 #1b2335;
+  scrollbar-color: #14e92d #1b2335;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 16px;
+  width: 32px;
 }
 
 *::-webkit-scrollbar-track {
@@ -312,6 +326,6 @@ html {
 
 *::-webkit-scrollbar-thumb {
   background-color: #2176f6;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 3px solid #ffffff;
 }
