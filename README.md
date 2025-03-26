@@ -1,6 +1,6 @@
-# 📺 TheExitMoviePlatform - Find Everything
+# 📺 TheExitMoviePlatform
 
-Application to view information about movies and series from all over the world using the amazing API of The Movie Database (TMDB).
+Free Application to view information about movies and series from all over the world using the amazing API of The Movie Database (TMDB).
 
 ## ⚙️ Features
 
@@ -26,7 +26,7 @@ Application to view information about movies and series from all over the world 
 - [**i18next 23.12.2**](https://react.i18next.com/) - Internationalization
   framework for React / React Native.
 - [**react-router-dom 6.23**](https://reactrouter.com/en/main) - A React Router enables "client side routing".
-- [**Axios](https://axios-http.com/) - A simple promise based HTTP client for the browser and node.js.
+- [**Axios**](https://axios-http.com/) - A simple promise based HTTP client for the browser and node.js.
 - [**Swiperjs**](https://swiperjs.com/) - The Most Modern Mobile Touch Slider.
 - [**react-infinite-scroll-component**](https://www.npmjs.com/package/react-infinite-scroll-component) - A component to make all your infinite scrolling woes go away with just 4.15 kB!.
 - [**primereact**](https://primereact.org/) - Elevate your web applications with PrimeReact's comprehensive suite of customizable, feature-rich UI components.
