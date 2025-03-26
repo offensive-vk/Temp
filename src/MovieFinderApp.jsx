@@ -108,7 +108,6 @@ export const MovieFinderApp = () => {
         <meta name="author" content="Vedansh (offensive-vk)" />
         <meta http-equiv="content-language" content="en,es" />
         <meta name="robots" content="index,nofollow" data-robots="true"/>
-        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Discover popular movies and series to watch with Movie Finder. TEMP - One Platform to Find Whatever You Need About Movies and Series." />
         <meta name="keywords" content="temp, theexitmovieplatform, movie-finder, show-finder, movies, series, movie, series, search, find, discover, popular, upcoming, top-rated, on-the-air, genre, category, actor, actress, cast, crew, production, release, budget, revenue, rating, runtime, tagline, vote-count, seasons, episodes, last-air-date, production-companies, director, recommendations, watch-trailer, streaming, results, results-for, media-type, origin-country, cast, spoken-languages, status, release-date, budget, revenue, popularity, runtime, tagline, vote-count, seasons, episodes, last-air-date, production-companies, crew, recommendations, watch-trailer, streaming, results, results-for, media-type, origin-country, cast, spoken-languages, status, release-date, budget, revenue, popularity, runtime, tagline, vote-count, seasons, episodes, last-air-date, production-companies, crew, recommendations, watch-trailer, streaming" />
