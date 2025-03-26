@@ -51,9 +51,7 @@ pnpm i
 pnpm run dev
 ```
 
-Navigate to [http://localhost:5173](http://localhost:5173) with your browser to see the result.
-
-Click [here](https://github.com/offensive-vk/Temp/blob/master/STATS.md) to know about file sizes and statistics.
+Navigate to [http://localhost:17027](http://localhost:17027) with your browser to see the result.
 
 ### Get in Touch 📬
 

@@ -1,10 +1,10 @@
-FROM node:20-alpine
+FROM node:22-alpine
 
 WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm i -g pnpm@9.10
+RUN npm i -g pnpm@10.0.0
 
 RUN pnpm i 
 
@@ -14,7 +14,7 @@ COPY . .
 
 RUN pnpm run build
 
-EXPOSE 5173
+EXPOSE 17027
 
 CMD ["pnpm", "run", "dev"]
 
