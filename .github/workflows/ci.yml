@@ -1,20 +1,10 @@
 name: CI
 
 on:
-  push:
-    paths-ignore:
-      - "**.md"
-      - "**/*.md"
-      - "**/*.svg"
-      - "**.svg"
-    branches:
-      - "master"
   pull_request:
     paths-ignore:
-      - "**.md"
       - "**/*.md"
       - "**/*.svg"
-      - "**.svg"
     branches:
       - "master"
 
@@ -27,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        node: ["18.x", "19.x", "20.x", "21.x", "22.x", "23.x"]
+        node: ["18.x", "19.x", "20.x", "21.x", "22.x"]
     runs-on: ${{ matrix.os }}
     name: Optimize & Build - v${{ matrix.node }} on ${{ matrix.os }}
     steps:
@@ -42,7 +32,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install pnpm
-        run: npm i -g pnpm@9.10.0 && pnpm -v
+        run: npm i -g pnpm@10.0.0 && pnpm -v
 
       - name: Install Dependencies
         run: pnpm i
