@@ -10,7 +10,7 @@ export const instance = axios.create({
 });
 
 (async() => {
-  console.log(`\t *** Fetching Account Details *** \t`);
+  // console.log(`\t *** Fetching Account Details *** \t`);
 
   const options = {
     method: 'GET',
@@ -23,10 +23,10 @@ export const instance = axios.create({
   const data = {};
   await axios
     .request(options)
-    .then(res => console.log(JSON.stringify(res.data, null, 2)))
     .catch(err => console.log(JSON.stringify(err, null, 2)));
+    // .then(res => JSON.stringify(res.data, null, 2))
     // .then(res => console.dir(res, { depth: null }))
     // .catch(err => console.dir(err, { depth: null }));
   
-  console.log(`\t *** Logged Account Details ***\t`);
+  // console.log(`\t *** Logged Account Details ***\t`);
 })();
